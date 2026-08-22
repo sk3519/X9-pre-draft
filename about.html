@@ -1,0 +1,201 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Studio — X9 Creatives</title>
+<meta name="description" content="X9 Creatives started in July 2026 — four friends, one table, and a rule that the people who plan your work also build it.">
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="toasts" id="toasts" aria-live="polite"></div>
+
+<header class="site-head">
+  <div class="wrap head-in">
+    <a class="brand" href="index.html" aria-label="X9 Creatives home">
+      <span class="brand-mark">X9</span>
+      <span class="brand-name">Creatives<small>Creative studio · est. Jul 2026</small></span>
+    </a>
+    <nav class="head-nav" aria-label="Primary">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="work.html">Work</a>
+      <a href="about.html" aria-current="page">Studio</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="head-tools">
+      <span class="clock-chip" title="Your local time"><span id="clock"></span></span>
+      <button class="icon-btn" id="soundBtn" aria-pressed="false" aria-label="Toggle interface sounds" title="Interface sounds">
+        <svg viewBox="0 0 24 24"><path d="M4 9v6h4l5 4V5L8 9H4z"/><path class="wave" d="M16.5 8.5a5 5 0 010 7"/></svg>
+      </button>
+      <button class="icon-btn" id="themeBtn" aria-label="Toggle day and night mode" title="Day / night">
+        <svg viewBox="0 0 24 24"><circle class="sun" cx="12" cy="12" r="4"/><path class="sun" d="M12 2v2M12 20v2M2 12h2M20 12h2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M19.1 4.9l-1.4 1.4M6.3 17.7l-1.4 1.4"/><path class="moon" d="M20 14.5A8 8 0 119.5 4 6.5 6.5 0 0020 14.5z"/></svg>
+      </button>
+      <button class="burger" id="burgerBtn" aria-expanded="false" aria-controls="mobileMenu" aria-label="Open menu">
+        <i></i><i></i>
+      </button>
+    </div>
+  </div>
+</header>
+
+<nav class="mobile-menu" id="mobileMenu" aria-label="Mobile navigation">
+  <a class="mm-link" href="index.html"><span>/01</span>Home</a>
+  <a class="mm-link" href="services.html"><span>/02</span>Services</a>
+  <a class="mm-link" href="work.html"><span>/03</span>Work</a>
+  <a class="mm-link" href="about.html" aria-current="page"><span>/04</span>Studio</a>
+  <a class="mm-link" href="contact.html"><span>/05</span>Contact</a>
+  <div class="mm-foot">
+    <a class="btn" href="contact.html">Book a call →</a>
+    <span class="mm-social">Instagram ↗ @x9_creatives</span>
+  </div>
+</nav>
+
+<main>
+
+<section class="wrap page-hero">
+  <span class="kicker reveal"><b>( Studio )</b> Who you're hiring</span>
+  <h1 class="display reveal" data-d="1" style="font-size:clamp(2.4rem,5vw,4rem)">Four friends.<br><span class="serif-it">One bench.</span></h1>
+  <p class="hero-sub reveal" data-d="2" style="margin-top:18px">X9 started in July 2026 around one table, with one rule: the people who plan your work are the people who build it. No departments to fall between, nobody hiding behind a job title.</p>
+</section>
+
+<section class="wrap" id="story">
+  <div class="sec-head reveal">
+    <span class="kicker"><b>( 01 )</b> So far</span>
+    <h2 class="sec-title">A short story.<br>We're living it.</h2>
+  </div>
+  <div class="timeline">
+    <div class="tl-item reveal">
+      <div class="tl-year">July 2026 · The table</div>
+      <h3>Four friends, one rule</h3>
+      <p>We'd each watched good brands get passed between agencies like a hot potato — strategy over here, design there, media finding out last. So we made a studio where none of that can happen: one bench, end to end.</p>
+    </div>
+    <div class="tl-item reveal" data-d="1">
+      <div class="tl-year">July–August 2026 · First signings</div>
+      <h3>The first mandates went live</h3>
+      <p><a href="https://www.instagram.com/harinimathan.official/" target="_blank" rel="noopener" style="color:var(--cobalt);font-weight:600">@harinimathan.official</a> trusted us with her personal brand, and <a href="https://www.instagram.com/karnanpattucentre/" target="_blank" rel="noopener" style="color:var(--cobalt);font-weight:600">Karnan Pattu Centre</a> put us on influencer marketing. Both still running — ask them, or just watch the feeds.</p>
+    </div>
+    <div class="tl-item reveal" data-d="2">
+      <div class="tl-year">Now · Building</div>
+      <h3>Websites with automation, quietly multiplying</h3>
+      <p>A queue of site builds is moving through the bench right now. Clients like keeping those private — so we show them live on calls instead of posting screenshots here.</p>
+    </div>
+    <div class="tl-item reveal" data-d="3">
+      <div class="tl-year">Next · You?</div>
+      <h3>The empty chair at the table</h3>
+      <p>We onboard a handful of clients at a time. If you've read this far, the next chapter probably has your name in it — the form takes two minutes.</p>
+    </div>
+  </div>
+</section>
+
+<section class="wrap">
+  <div class="pull reveal">
+    <p>“Agencies rarely fail at the work.<br>They fail <b>between departments</b>.”</p>
+    <cite>The reason X9 exists</cite>
+  </div>
+</section>
+
+<section class="wrap" id="values">
+  <div class="sec-head reveal">
+    <span class="kicker"><b>( 02 )</b> House rules</span>
+    <h2 class="sec-title">Six things we don't negotiate.</h2>
+  </div>
+  <div class="values-grid">
+    <article class="value-card card-hover reveal"><div class="v-num">/01</div><h3>You meet everyone</h3><p>The four on your first call are the four doing your work. No B-team appears after you sign.</p></article>
+    <article class="value-card card-hover reveal" data-d="1"><div class="v-num">/02</div><h3>Honest dashboards</h3><p>You see what we see — including the tests that flopped. Numbers over narratives.</p></article>
+    <article class="value-card card-hover reveal" data-d="2"><div class="v-num">/03</div><h3>Fixed quotes</h3><p>One number agreed before anything starts. Scope changes get re-quoted openly, never quietly absorbed.</p></article>
+    <article class="value-card card-hover reveal" data-d="1"><div class="v-num">/04</div><h3>Weekly builds</h3><p>You click real progress every week. Demos include the embarrassing parts — that's where trust lives.</p></article>
+    <article class="value-card card-hover reveal" data-d="2"><div class="v-num">/05</div><h3>Fewer, better clients</h3><p>We take projects we believe we can move. If yours isn't our shape, we'll say so and point you somewhere better.</p></article>
+    <article class="value-card card-hover reveal" data-d="3"><div class="v-num">/06</div><h3>Cake on launch day</h3><p>Every launch gets cake. Non-negotiable morale infrastructure since day one.</p></article>
+  </div>
+</section>
+
+<section class="wrap" id="crew">
+  <div class="sec-head reveal">
+    <span class="kicker"><b>( 03 )</b> The bench</span>
+    <h2 class="sec-title">Who does what.</h2>
+    <p class="sec-sub">Four friends covering four disciplines — names on request, work on display.</p>
+  </div>
+  <div class="roles-grid">
+    <article class="role-card card-hover reveal">
+      <div class="role-count">/01</div>
+      <h3>Strategy &amp; Positioning</h3>
+      <p>Naming, research and the courage to cut good ideas that don't serve the number.</p>
+    </article>
+    <article class="role-card card-hover reveal" data-d="1">
+      <div class="role-count">/02</div>
+      <h3>Design &amp; Content</h3>
+      <p>Identity systems, shoots and edits — built to be recognised, not just approved.</p>
+    </article>
+    <article class="role-card card-hover reveal" data-d="2">
+      <div class="role-count">/03</div>
+      <h3>Engineering &amp; Automation</h3>
+      <p>Fast sites, clean code and workflows that eat busywork for breakfast.</p>
+    </article>
+    <article class="role-card card-hover reveal" data-d="3">
+      <div class="role-count">/04</div>
+      <h3>Growth &amp; Media</h3>
+      <p>Influencer campaigns, SEO and dashboards — fluent in spreadsheets, allergic to vanity metrics.</p>
+    </article>
+  </div>
+</section>
+
+<section class="wrap" style="padding-bottom:24px">
+  <div class="cta-band reveal">
+    <h2>Come be early.</h2>
+    <p>Year-one clients get founder-level attention big agencies can't sell anymore. The free call costs forty minutes.</p>
+    <div class="cta-row">
+      <a class="btn btn-paper" href="contact.html">Pull up a chair →</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="foot-wrap">
+    <div class="foot-mark" aria-hidden="true">X9</div>
+    <div class="foot-cols">
+      <div class="foot-brand">
+        <a class="brand" href="index.html" aria-label="Back to top">
+          <span class="brand-mark" style="background:var(--paper);color:var(--ink)">X9</span>
+          <span class="brand-name" style="color:var(--paper)">Creatives</span>
+        </a>
+        <p>Personal branding, websites and automation — run by four friends since July 2026.</p>
+      </div>
+      <div class="foot-col">
+        <h4>Sitemap</h4>
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="work.html">Work</a>
+        <a href="about.html">Studio</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="foot-col">
+        <h4>Flagships</h4>
+        <a href="services.html#personal-branding">Personal Branding</a>
+        <a href="services.html#website-development">Websites &amp; Automation</a>
+        <a href="services.html#specialists">Everything else</a>
+      </div>
+      <div class="foot-col">
+        <h4>Say hello</h4>
+        <a href="mailto:hello@x9creatives.co">hello@x9creatives.co</a>
+        <a href="https://www.instagram.com/x9_creatives/" target="_blank" rel="noopener">Instagram ↗ @x9_creatives</a>
+        <a href="contact.html">Book a call</a>
+      </div>
+    </div>
+    <div class="foot-base">
+      <span>© 2026 X9 Creatives — All rights reserved</span>
+      <span><span id="statVisits">Visit #—</span> · <span id="statScreens">0.0 screens deep</span></span>
+      <span>Made by four friends · <b>↑ ↑ ↓ ↓ ← → ← → B A</b></span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js" defer></script>
+</body>
+</html>

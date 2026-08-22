@@ -1,0 +1,183 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact — X9 Creatives</title>
+<meta name="description" content="Tell X9 Creatives what you're making. Free first call, fixed quotes, replies within one business day.">
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="toasts" id="toasts" aria-live="polite"></div>
+
+<header class="site-head">
+  <div class="wrap head-in">
+    <a class="brand" href="index.html" aria-label="X9 Creatives home">
+      <span class="brand-mark">X9</span>
+      <span class="brand-name">Creatives<small>Creative studio · est. Jul 2026</small></span>
+    </a>
+    <nav class="head-nav" aria-label="Primary">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="work.html">Work</a>
+      <a href="about.html">Studio</a>
+      <a href="contact.html" aria-current="page">Contact</a>
+    </nav>
+    <div class="head-tools">
+      <span class="clock-chip" title="Your local time"><span id="clock"></span></span>
+      <button class="icon-btn" id="soundBtn" aria-pressed="false" aria-label="Toggle interface sounds" title="Interface sounds">
+        <svg viewBox="0 0 24 24"><path d="M4 9v6h4l5 4V5L8 9H4z"/><path class="wave" d="M16.5 8.5a5 5 0 010 7"/></svg>
+      </button>
+      <button class="icon-btn" id="themeBtn" aria-label="Toggle day and night mode" title="Day / night">
+        <svg viewBox="0 0 24 24"><circle class="sun" cx="12" cy="12" r="4"/><path class="sun" d="M12 2v2M12 20v2M2 12h2M20 12h2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M19.1 4.9l-1.4 1.4M6.3 17.7l-1.4 1.4"/><path class="moon" d="M20 14.5A8 8 0 119.5 4 6.5 6.5 0 0020 14.5z"/></svg>
+      </button>
+      <button class="burger" id="burgerBtn" aria-expanded="false" aria-controls="mobileMenu" aria-label="Open menu">
+        <i></i><i></i>
+      </button>
+    </div>
+  </div>
+</header>
+
+<nav class="mobile-menu" id="mobileMenu" aria-label="Mobile navigation">
+  <a class="mm-link" href="index.html"><span>/01</span>Home</a>
+  <a class="mm-link" href="services.html"><span>/02</span>Services</a>
+  <a class="mm-link" href="work.html"><span>/03</span>Work</a>
+  <a class="mm-link" href="about.html"><span>/04</span>Studio</a>
+  <a class="mm-link" href="contact.html" aria-current="page"><span>/05</span>Contact</a>
+  <div class="mm-foot">
+    <a class="btn" href="contact.html">Book a call →</a>
+    <span class="mm-social">Instagram ↗ @x9_creatives</span>
+  </div>
+</nav>
+
+<main>
+
+<section class="wrap page-hero">
+  <span class="kicker reveal"><b>( Contact )</b> First moves</span>
+  <h1 class="display reveal" data-d="1" style="font-size:clamp(2.4rem,5vw,4rem)">Tell us what<br>you're <span class="serif-it">making</span>.</h1>
+  <p class="hero-sub reveal" data-d="2" style="margin-top:18px">One of the four reads every message the same day. The messier your brief, the more useful the call — don't polish it.</p>
+</section>
+
+<section class="wrap hello-grid" style="padding-top:18px;padding-bottom:30px">
+
+  <div class="form-card reveal">
+    <form id="contactForm" novalidate>
+      <div class="field">
+        <label for="cName">Your name</label>
+        <input id="cName" type="text" autocomplete="name" placeholder="Sam, Alex, Captain Awesome…">
+        <span class="msg"></span>
+      </div>
+      <div class="field">
+        <label for="cEmail">Email</label>
+        <input id="cEmail" type="email" autocomplete="email" placeholder="you@somewhere.nice">
+        <span class="msg"></span>
+      </div>
+      <div class="field">
+        <label for="cBudget">What do you need first? (optional)</label>
+        <select id="cBudget">
+          <option value="">Not sure yet — let's talk</option>
+          <option>Personal branding</option>
+          <option>Website + automation</option>
+          <option>Influencer marketing</option>
+          <option>Something else entirely</option>
+        </select>
+        <span class="msg"></span>
+      </div>
+      <div class="field">
+        <label for="cMsg">What are we solving?</label>
+        <textarea id="cMsg" placeholder="A personal brand stuck at zero, a site that leaks customers, a launch in eight weeks…"></textarea>
+        <span class="msg"></span>
+      </div>
+      <button class="btn" id="sendBtn" type="submit">Send it over →</button>
+      <p style="margin-top:14px;font-size:.84rem;color:var(--muted)">Lands straight in our inbox — expect a reply within one business day.</p>
+    </form>
+
+    <div class="done-panel" id="formDone" aria-live="polite">
+      <div class="done-check">
+        <svg viewBox="0 0 24 24"><path d="M4 12.5l5 5L20 6.5"/></svg>
+      </div>
+      <h3>Brief received, <span id="doneName">friend</span>.</h3>
+      <p>Your brief just landed with all four of us — we'll get back to you within one business day.</p>
+    </div>
+  </div>
+
+  <div class="info-card reveal" data-d="1">
+    <div class="status-line"><span class="dot" id="officeDot"></span><span id="officeStatus">Checking if we're awake…</span></div>
+    <div class="info-stack">
+      <div class="info-block">
+        <button class="btn copy-btn" id="copyEmail" type="button">
+          <span class="copy-label">hello@x9creatives.co</span>
+          <span>⧉</span>
+        </button>
+        <p style="margin-top:10px;font-size:.85rem;color:var(--muted)">Click to copy. Carrier pigeons also accepted.</p>
+      </div>
+      <div class="info-block">
+        <h3>Instagram</h3>
+        <div class="socials">
+          <a href="https://www.instagram.com/x9_creatives/" target="_blank" rel="noopener">@x9_creatives ↗</a>
+        </div>
+        <p style="margin-top:10px;font-size:.85rem;color:var(--muted)">DMs open — but the form gets you a faster, fuller answer.</p>
+      </div>
+      <div class="info-block">
+        <h3>Studio hours</h3>
+        <p>Mon–Fri, 10:00–19:00 IST. Weekends are for recharging — replies resume Monday, fresh.</p>
+      </div>
+      <div class="info-block">
+        <h3>What happens next</h3>
+        <p>One free call. We map your problem out loud, tell you honestly whether we can move it, and only then talk scope or price.</p>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+</main>
+
+<footer>
+  <div class="foot-wrap">
+    <div class="foot-mark" aria-hidden="true">X9</div>
+    <div class="foot-cols">
+      <div class="foot-brand">
+        <a class="brand" href="index.html" aria-label="Back to top">
+          <span class="brand-mark" style="background:var(--paper);color:var(--ink)">X9</span>
+          <span class="brand-name" style="color:var(--paper)">Creatives</span>
+        </a>
+        <p>Personal branding, websites and automation — run by four friends since July 2026.</p>
+      </div>
+      <div class="foot-col">
+        <h4>Sitemap</h4>
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="work.html">Work</a>
+        <a href="about.html">Studio</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="foot-col">
+        <h4>Flagships</h4>
+        <a href="services.html#personal-branding">Personal Branding</a>
+        <a href="services.html#website-development">Websites &amp; Automation</a>
+        <a href="services.html#specialists">Everything else</a>
+      </div>
+      <div class="foot-col">
+        <h4>Say hello</h4>
+        <a href="mailto:hello@x9creatives.co">hello@x9creatives.co</a>
+        <a href="https://www.instagram.com/x9_creatives/" target="_blank" rel="noopener">Instagram ↗ @x9_creatives</a>
+        <a href="contact.html">Book a call</a>
+      </div>
+    </div>
+    <div class="foot-base">
+      <span>© 2026 X9 Creatives — All rights reserved</span>
+      <span><span id="statVisits">Visit #—</span> · <span id="statScreens">0.0 screens deep</span></span>
+      <span>Made by four friends · <b>↑ ↑ ↓ ↓ ← → ← → B A</b></span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js" defer></script>
+</body>
+</html>

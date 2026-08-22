@@ -1,0 +1,329 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>X9 Creatives — One team. One set of numbers.</title>
+<meta name="description" content="X9 Creatives is a four-person studio for personal branding, websites and automation. Started July 2026. You talk to the people doing the work.">
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+<meta property="og:title" content="X9 Creatives">
+<meta property="og:description" content="Personal branding, websites and automation under one roof. Four friends, one bench, zero handoffs.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="toasts" id="toasts" aria-live="polite"></div>
+
+<header class="site-head">
+  <div class="wrap head-in">
+    <a class="brand" href="index.html" aria-label="X9 Creatives home">
+      <span class="brand-mark">X9</span>
+      <span class="brand-name">Creatives<small>Creative studio · est. Jul 2026</small></span>
+    </a>
+    <nav class="head-nav" aria-label="Primary">
+      <a href="index.html" aria-current="page">Home</a>
+      <a href="services.html">Services</a>
+      <a href="work.html">Work</a>
+      <a href="about.html">Studio</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="head-tools">
+      <span class="clock-chip" title="Your local time"><span id="clock"></span></span>
+      <button class="icon-btn" id="soundBtn" aria-pressed="false" aria-label="Toggle interface sounds" title="Interface sounds">
+        <svg viewBox="0 0 24 24"><path d="M4 9v6h4l5 4V5L8 9H4z"/><path class="wave" d="M16.5 8.5a5 5 0 010 7"/></svg>
+      </button>
+      <button class="icon-btn" id="themeBtn" aria-label="Toggle day and night mode" title="Day / night">
+        <svg viewBox="0 0 24 24"><circle class="sun" cx="12" cy="12" r="4"/><path class="sun" d="M12 2v2M12 20v2M2 12h2M20 12h2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M19.1 4.9l-1.4 1.4M6.3 17.7l-1.4 1.4"/><path class="moon" d="M20 14.5A8 8 0 119.5 4 6.5 6.5 0 0020 14.5z"/></svg>
+      </button>
+      <button class="burger" id="burgerBtn" aria-expanded="false" aria-controls="mobileMenu" aria-label="Open menu">
+        <i></i><i></i>
+      </button>
+    </div>
+  </div>
+</header>
+
+<nav class="mobile-menu" id="mobileMenu" aria-label="Mobile navigation">
+  <a class="mm-link" href="index.html" aria-current="page"><span>/01</span>Home</a>
+  <a class="mm-link" href="services.html"><span>/02</span>Services</a>
+  <a class="mm-link" href="work.html"><span>/03</span>Work</a>
+  <a class="mm-link" href="about.html"><span>/04</span>Studio</a>
+  <a class="mm-link" href="contact.html"><span>/05</span>Contact</a>
+  <div class="mm-foot">
+    <a class="btn" href="contact.html">Book a call →</a>
+    <span class="mm-social">Instagram ↗ @x9_creatives</span>
+  </div>
+</nav>
+
+<main>
+
+<section class="hero">
+  <div class="ghost-num" aria-hidden="true">9</div>
+  <div class="wrap hero-inner">
+    <div class="greet-row reveal">
+      <span class="pill" id="greeting">Hello!</span>
+      <span class="pill" id="visitChip" style="color:var(--muted)">first visit</span>
+    </div>
+    <h1 class="display reveal" data-d="1">One team.<br>One set of<br><span class="serif-it u-draw">numbers</span>.</h1>
+    <p class="hero-sub reveal" data-d="2">We're X9 — <strong>four friends</strong> running personal branding, websites and automation as one crew. You talk to the people doing the work, you see progress every week, and you watch the same dashboard we do.</p>
+    <div class="cta-row reveal" data-d="3">
+      <a class="btn" href="contact.html">Start your project →</a>
+      <a class="btn btn-line" href="services.html">What we do</a>
+    </div>
+    <p class="avail-note reveal" data-d="4"><span class="dot-inline"></span>A young studio by choice — every client gets senior hands, never a junior queue.</p>
+  </div>
+</section>
+
+<div class="caps-strip wrap reveal">
+  <div class="caps-row">
+    <span>Personal branding</span><span class="star">✳</span>
+    <span>Websites</span><span class="star">✳</span>
+    <span>Automation</span><span class="star">✳</span>
+    <span>Brand strategy</span><span class="star">✳</span>
+    <span>SEO &amp; AI search</span><span class="star">✳</span>
+    <span>Content</span><span class="star">✳</span>
+    <span>Social</span><span class="star">✳</span>
+    <span>CRM &amp; ops</span>
+  </div>
+</div>
+
+<section class="wrap" id="manifesto">
+  <div class="sec-head reveal">
+    <span class="kicker"><b>( 01 )</b> Why we're different</span>
+    <h2 class="sec-title">Bring the problem.<br>Skip the relay race.</h2>
+  </div>
+  <div class="manifesto-lines reveal" data-d="1">
+    Most agencies pass you<br>
+    between <span class="strike">departments</span>.<br>
+    We just sit at one table<br>
+    and <span class="serif-it">answer the phone ourselves</span>.
+  </div>
+  <div class="manifesto-body">
+    <p class="reveal" data-d="1">You've probably lived this: strategy says one thing, design builds another, media finds out on launch day. You spend your retainer managing the seams instead of growing the business.</p>
+    <p class="reveal" data-d="2">Here, the person who plans your brand ships your website and checks the numbers afterwards. When something needs fixing mid-week, it gets fixed in minutes — because nobody is waiting on another vendor's reply.</p>
+  </div>
+</section>
+
+<section class="wrap" id="flagships">
+  <div class="sec-head reveal">
+    <span class="kicker"><b>( 02 )</b> What we're known for</span>
+    <h2 class="sec-title">Two things we do<br>better than anyone.</h2>
+  </div>
+  <div class="flagship-grid">
+    <article class="flagship-card reveal">
+      <div class="fs-num" aria-hidden="true">01</div>
+      <span class="fs-chip">Flagship · 01</span>
+      <h3>Personal Branding</h3>
+      <p>For founders and creators who are ready to be the face of their work. We build the positioning, then run the whole engine that makes your name mean something.</p>
+      <ul class="mini-points">
+        <li>Positioning &amp; voice that sounds like you on a good day</li>
+        <li>A content system — ideas, shoot, edit, post, repeat</li>
+        <li>Channel growth and community, handled weekly</li>
+        <li>Monthly reviews in plain language, not agency-speak</li>
+      </ul>
+      <div class="flagship-cta">
+        <a href="work.html">Full details ↗</a>
+        <span class="live-note">Live client: <a href="https://www.instagram.com/harinimathan.official/" target="_blank" rel="noopener">@harinimathan.official</a></span>
+      </div>
+    </article>
+    <article class="flagship-card alt reveal" data-d="1">
+      <div class="fs-num" aria-hidden="true">02</div>
+      <span class="fs-chip">Flagship · 02</span>
+      <h3>Websites &amp; Automation</h3>
+      <p>Sites that load fast and read beautifully — then quietly do the boring work: sorting leads, sending follow-ups, writing reports while you sleep.</p>
+      <ul class="mini-points">
+        <li>Design-led development, sub-second loads</li>
+        <li>Automations baked in — forms, CRM, alerts, follow-ups</li>
+        <li>SEO-ready structure from day one</li>
+        <li>Care plans so it keeps improving after launch</li>
+      </ul>
+      <div class="flagship-cta">
+        <a href="work.html">Full details ↗</a>
+        <span class="live-note">Plenty built privately — <a href="contact.html">ask us on a call</a></span>
+      </div>
+    </article>
+  </div>
+  <div class="reveal" data-d="1">
+    <p style="margin-top:34px;font-weight:600;color:var(--muted);font-size:.92rem">And everything else stays under one roof:</p>
+    <div class="chip-list">
+      <a class="svc-chip" href="services.html#brand-strategy">Brand Strategy<i>/03</i></a>
+      <a class="svc-chip" href="services.html#seo-llm-seo">SEO &amp; LLM SEO<i>/04</i></a>
+      <a class="svc-chip" href="services.html#content-production">Content Production<i>/05</i></a>
+      <a class="svc-chip" href="services.html#social-media-management">Social Media Management<i>/06</i></a>
+      <a class="svc-chip" href="services.html#landing-page-development">Landing Pages<i>/07</i></a>
+      <a class="svc-chip" href="services.html#crm-erp-development">CRM &amp; ERP<i>/08</i></a>
+      <a class="svc-chip" href="services.html#ai-automation">AI Automation<i>/09</i></a>
+      <a class="svc-chip" href="services.html#maintenance-amc">Maintenance &amp; AMC<i>/10</i></a>
+    </div>
+  </div>
+</section>
+
+<section class="stats-band" aria-label="Studio numbers">
+  <div class="stat reveal" data-i="/01">
+    <div class="stat-num"><span data-count="5" data-suffix="+">000+</span></div>
+    <div class="stat-label">Clients shipped</div>
+  </div>
+  <div class="stat reveal" data-i="/02" data-d="1">
+    <div class="stat-num"><span data-count="10" data-pad="true">00</span></div>
+    <div class="stat-label">Services, one roof</div>
+  </div>
+  <div class="stat reveal" data-i="/03" data-d="2">
+    <div class="stat-num"><span data-count="4" data-pad="true">00</span></div>
+    <div class="stat-label">Friends, one bench</div>
+  </div>
+  <div class="stat reveal" data-i="/04" data-d="3">
+    <div class="stat-num heart-stat" title="Working on it, every week">♥</div>
+    <div class="stat-label">Becoming the studio<br>people love</div>
+  </div>
+</section>
+
+<section class="wrap" id="work-preview">
+  <div class="sec-head reveal">
+    <span class="kicker"><b>( 03 )</b> Clients we're running</span>
+    <h2 class="sec-title">Live mandates,<br>not mockups.</h2>
+    <p class="sec-sub">We launched in July 2026. Instead of padding this page, here's what's actually on our desk right now.</p>
+  </div>
+  <div class="work-grid">
+    <a class="case-card card-hover reveal" href="https://www.instagram.com/harinimathan.official/" target="_blank" rel="noopener">
+      <div class="ig">
+        <div class="ig-head">
+          <span class="ig-avatar"><img src="assets/Harini.png" alt="Harini Mathan"></span>
+          <span class="ig-id"><span class="ig-handle">harinimathan.official</span><span class="ig-sub">Personal brand · X9 client</span></span>
+          <span class="ig-follow">Following</span>
+        </div>
+        <div class="ig-media photo" style="background-image:url('assets/harini-png.png')" data-tag="Brand shoot"></div>
+        <div class="ig-actions">
+          <svg viewBox="0 0 24 24" class="ig-heart"><path d="M20.8 4.6a5.5 5.5 0 00-7.8 0L12 5.7l-1-1a5.5 5.5 0 00-7.8 7.7l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 000-7.8z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M21 11.5a8.4 8.4 0 01-8.5 8.4c-1.5 0-3-.4-4.2-1.1L3 20l1.2-5.3A8.4 8.4 0 1121 11.5z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+          <svg viewBox="0 0 24 24" class="save"><path d="M19 21l-7-5-7 5V5a2 2 0 012-2h10a2 2 0 012 2z"/></svg>
+        </div>
+        <p class="ig-likes">Liked by x9_creatives and others</p>
+        <p class="ig-cap"><b>harinimathan.official</b> new week, same promise — show up like you mean it 🎬</p>
+      </div>
+      <div class="work-meta">
+        <h3>Harini Mathan</h3>
+        <small>Personal branding — positioning, content engine, channels</small>
+        <div class="tagrow"><span class="tag">Personal Branding</span><span class="tag">Live</span><span class="tag">View profile ↗</span></div>
+      </div>
+    </a>
+    <a class="case-card card-hover reveal" data-d="1" href="https://www.instagram.com/karnanpattucentre/" target="_blank" rel="noopener">
+      <div class="ig">
+        <div class="ig-head">
+          <span class="ig-avatar"><img src="assets/Kpc.png" alt="Karnan Pattu Centre"></span>
+          <span class="ig-id"><span class="ig-handle">karnanpattucentre</span><span class="ig-sub">Influencer marketing · X9 client</span></span>
+          <span class="ig-follow">Following</span>
+        </div>
+        <div class="ig-media photo" style="background-image:url('assets/patt-png.png')" data-tag="Collab live"></div>
+        <div class="ig-actions">
+          <svg viewBox="0 0 24 24" class="ig-heart"><path d="M20.8 4.6a5.5 5.5 0 00-7.8 0L12 5.7l-1-1a5.5 5.5 0 00-7.8 7.7l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 000-7.8z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M21 11.5a8.4 8.4 0 01-8.5 8.4c-1.5 0-3-.4-4.2-1.1L3 20l1.2-5.3A8.4 8.4 0 1121 11.5z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+          <svg viewBox="0 0 24 24" class="save"><path d="M19 21l-7-5-7 5V5a2 2 0 012-2h10a2 2 0 012 2z"/></svg>
+        </div>
+        <p class="ig-likes">Liked by x9_creatives and others</p>
+        <p class="ig-cap"><b>karnanpattucentre</b> new collab just dropped — full campaign breakdown in stories 🎯</p>
+      </div>
+      <div class="work-meta">
+        <h3>Karnan Pattu Centre</h3>
+        <small>Influencer marketing — campaigns, collabs, audience growth</small>
+        <div class="tagrow"><span class="tag">Influencer Marketing</span><span class="tag">Live</span><span class="tag">View profile ↗</span></div>
+      </div>
+    </a>
+    <a class="case-card card-hover reveal" data-d="1" href="contact.html">
+      <div class="art" style="background:url('assets/webbuild.svg') center/cover no-repeat"></div>
+      <div class="work-meta">
+        <h3>Website builds</h3>
+        <small>Plenty delivered — shown live on a call, not online</small>
+        <span class="res">Ask us anything ↗</span>
+        <div class="tagrow"><span class="tag">Web</span><span class="tag">Automation</span></div>
+      </div>
+    </a>
+  </div>
+  <div class="cta-row reveal" style="margin-top:32px">
+    <a class="btn btn-line" href="work.html">More about our work →</a>
+  </div>
+</section>
+
+<section class="wrap" id="process">
+  <div class="sec-head reveal">
+    <span class="kicker"><b>( 04 )</b> How a project runs</span>
+    <h2 class="sec-title">Four moves.<br>You're inside every one.</h2>
+  </div>
+  <div class="process-grid">
+    <div class="step reveal"><div class="step-num">01</div><h3>Listen</h3><p>One free call. You talk, we map the problem out loud together — no pitch-deck theatre.</p></div>
+    <div class="step reveal" data-d="1"><div class="step-num">02</div><h3>Plan</h3><p>You get a fixed quote and a weekly rhythm in writing before anything starts. No meters running.</p></div>
+    <div class="step reveal" data-d="2"><div class="step-num">03</div><h3>Build</h3><p>Brand, site and automations ship together. Every Friday you click something real.</p></div>
+    <div class="step reveal" data-d="3"><div class="step-num">04</div><h3>Grow</h3><p>After launch we stay — reading dashboards, tuning what's slow, automating the next boring thing.</p></div>
+  </div>
+</section>
+
+<section class="wrap">
+  <div class="cta-band reveal">
+    <h2>Tell us what you're building.</h2>
+    <p>Forty minutes, free. We'll tell you straight whether we can move your number — and only then do we talk price.</p>
+    <div class="cta-row">
+      <a class="btn btn-paper" href="contact.html">Book a call →</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="foot-wrap">
+    <div class="foot-mark" aria-hidden="true">X9</div>
+    <div class="foot-cols">
+      <div class="foot-brand">
+        <a class="brand" href="index.html" aria-label="Back to top">
+          <span class="brand-mark" style="background:var(--paper);color:var(--ink)">X9</span>
+          <span class="brand-name" style="color:var(--paper)">Creatives</span>
+        </a>
+        <p>Personal branding, websites and automation — run by four friends since July 2026.</p>
+      </div>
+      <div class="foot-col">
+        <h4>Sitemap</h4>
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="work.html">Work</a>
+        <a href="about.html">Studio</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="foot-col">
+        <h4>Flagships</h4>
+        <a href="services.html#personal-branding">Personal Branding</a>
+        <a href="services.html#website-development">Websites &amp; Automation</a>
+        <a href="services.html#brand-strategy">Everything else</a>
+      </div>
+      <div class="foot-col">
+        <h4>Say hello</h4>
+        <a href="mailto:hello@x9creatives.co">hello@x9creatives.co</a>
+        <a href="https://www.instagram.com/x9_creatives/" target="_blank" rel="noopener">Instagram ↗ @x9_creatives</a>
+        <a href="contact.html">Book a call</a>
+      </div>
+    </div>
+    <div class="foot-base">
+      <span>© 2026 X9 Creatives — All rights reserved</span>
+      <span><span id="statVisits">Visit #—</span> · <span id="statScreens">0.0 screens deep</span></span>
+      <span>Made by four friends · <b>↑ ↑ ↓ ↓ ← → ← → B A</b></span>
+    </div>
+  </div>
+</footer>
+
+<div class="talk-wrap" id="talkWrap">
+  <div class="talk-pop" id="talkPop" role="menu" aria-label="Ways to talk to us">
+    <p class="talk-pop-title">Two ways to start 👋</p>
+    <a class="talk-opt" href="contact.html"><b>Book the free call</b><span>40 minutes, zero pitch theatre</span></a>
+    <a class="talk-opt" href="mailto:hello@x9creatives.co?subject=Saying%20hello%20to%20X9"><b>Write to us</b><span>hello@x9creatives.co</span></a>
+  </div>
+  <button class="talk-fab" id="talkFab" aria-expanded="false" aria-controls="talkPop">
+    <span class="fab-dot" id="fabDot"></span>
+    <span class="fab-label">Talk to us</span>
+  </button>
+</div>
+
+<script src="js/main.js" defer></script>
+</body>
+</html>
